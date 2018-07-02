@@ -11,8 +11,14 @@ export class JokeComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit() {
+  ngOnChanges() {
+    console.log(`ngOnChanges - data is ${this.data}`);
   }
+
+  ngOnInit() {
+    console.log(`ngOnInit  - data is ${this.data}`);
+  }
+
 
   ngDoCheck() {
     console.log("ngDoCheck")
