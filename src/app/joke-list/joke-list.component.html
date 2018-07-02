@@ -1,4 +1,8 @@
-<app-headeroke-form (jokeCreated)="addJoke($event)"></app-headeroke-form>
+<!-- <app-headeroke-form (jokeCreated)="addJoke($event)"></app-headeroke-form> -->
 <app-joke *ngFor="let j of jokes" [joke]="j">
     <h1>{{ j.punchline }}</h1>
 </app-joke>
+<button type="button" class="btn btn-success" (click)="addJoke()">Add Joke
+</button>
+<button type="button" class="btn btn-danger" (click)="deleteJoke()">Clear Jokes
+</button>
