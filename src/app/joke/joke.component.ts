@@ -12,11 +12,11 @@ export class JokeComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log(`ngOnChanges - data is ${this.data}`);
+    console.log(`ngOnChanges - data is ${this.joke}`);
   }
 
   ngOnInit() {
-    console.log(`ngOnInit  - data is ${this.data}`);
+    console.log(`ngOnInit  - data is ${this.joke}`);
   }
 
 
