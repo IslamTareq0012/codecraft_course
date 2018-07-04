@@ -1,8 +1,8 @@
 <div class="card card-block" ccCardHover>
     <h4 class="card-title">{{joke.setup}}</h4>
-    <p class="card-text" [hidden]="joke.hide">
+    <p class="card-text" [style.display]="'none'">
         <ng-content></ng-content>
     </p>
-    <a (click)="joke.toggle()" class="btn btn-warning">Tell Me
-    </a>
+    <!-- <a (click)="joke.toggle()" class="btn btn-warning">Tell Me
+    </a> -->
 </div>
