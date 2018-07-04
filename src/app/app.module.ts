@@ -6,12 +6,14 @@ import { HeaderokeFormComponent } from './headeroke-form/headeroke-form.componen
 import { JokeComponent } from './joke/joke.component';
 import { JokeListComponent } from './joke-list/joke-list.component';
 
+import { CardHoverDirective } from '../Directives/cardHover';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderokeFormComponent,
     JokeComponent,
-    JokeListComponent
+    JokeListComponent,
+    CardHoverDirective
   ],
   imports: [
     BrowserModule
