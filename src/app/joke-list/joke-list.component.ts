@@ -18,17 +18,17 @@ export class JokeListComponent implements OnInit, AfterContentInit, AfterViewIni
       new Joke("What kind of cheese do you use to disguise a small horse?", "Mask-a-pony (Mascarpone)"),
       new Joke("A kid threw a lump of cheddar at me", "I thought ‘That’s not very mature’"),
     ];
-    console.log(`new - jokeViewChild is ${this.jokeViewChild}`);
+    // console.log(`new - jokeViewChild is ${this.jokeViewChild}`);
   }
   ngOnInit() {
   }
   ngAfterContentInit() {
-    console.log(`ngAfterContentInit - jokeContentChild is ${this.jokeContentChild}`);
+    // console.log(`ngAfterContentInit - jokeContentChild is ${this.jokeContentChild}`);
   }
   ngAfterViewInit() {
-    console.log(`ngAfterViewInit - jokeViewChild is ${this.jokeViewChild}`);
+    // console.log(`ngAfterViewInit - jokeViewChild is ${this.jokeViewChild}`);
     let jokes: JokeComponent[] = this.jokeViewChildren.toArray();
-    console.log(jokes);
+    // console.log(jokes);
   }
   // addJoke(joke) {
   //   this.jokes.unshift(joke);

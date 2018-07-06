@@ -11,37 +11,37 @@ export class JokeComponent implements OnInit {
   constructor() {
   }
 
-  ngOnChanges() {
-    console.log(`ngOnChanges - data is ${this.joke}`);
-  }
+  // ngOnChanges() {
+  //   console.log(`ngOnChanges - data is ${this.joke}`);
+  // }
 
   ngOnInit() {
-    console.log(`ngOnInit  - data is ${this.joke}`);
+    // console.log(`ngOnInit  - data is ${this.joke}`);
   }
 
 
-  ngDoCheck() {
-    console.log("ngDoCheck")
-  }
+  // ngDoCheck() {
+  //   console.log("ngDoCheck")
+  // }
 
-  ngAfterContentInit() {
-    console.log("ngAfterContentInit");
-  }
+  // ngAfterContentInit() {
+  //   console.log("ngAfterContentInit");
+  // }
 
-  ngAfterContentChecked() {
-    console.log("ngAfterContentChecked");
-  }
+  // ngAfterContentChecked() {
+  //   console.log("ngAfterContentChecked");
+  // }
 
-  ngAfterViewInit() {
-    console.log("ngAfterViewInit");
-  }
+  // ngAfterViewInit() {
+  //   console.log("ngAfterViewInit");
+  // }
 
-  ngAfterViewChecked() {
-    console.log("ngAfterViewChecked");
-  }
+  // ngAfterViewChecked() {
+  //   console.log("ngAfterViewChecked");
+  // }
 
-  ngOnDestroy() {
-    console.log("ngOnDestroy");
-  }
+  // ngOnDestroy() {
+  //   console.log("ngOnDestroy");
+  // }
 
 }
