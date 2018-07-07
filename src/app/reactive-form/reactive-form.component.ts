@@ -2,7 +2,7 @@ import { NgModule, Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators, FormBuilder } from "@angular/forms";
 import 'rxjs/Rx';
 import { filter, map } from 'rxjs/operators';
-
+import { Observable } from 'rxjs/Rx';
 @Component({
   selector: 'app-reactive-form',
   templateUrl: './reactive-form.component.html',
@@ -10,6 +10,7 @@ import { filter, map } from 'rxjs/operators';
 })
 export class ReactiveFormComponent implements OnInit {
 
+  observable: Observable<number>;
   form: FormGroup;
   comment = new FormControl("", Validators.required);
   name = new FormControl("", Validators.required);
@@ -20,6 +21,7 @@ export class ReactiveFormComponent implements OnInit {
 
 
   constructor(fb: FormBuilder) {
+    this.observable = this.getObservable();
     this.form = fb.group({
       "comment": this.comment,
       "name": this.name,
@@ -37,6 +39,13 @@ export class ReactiveFormComponent implements OnInit {
       })
     ).subscribe(data => console.log(JSON.stringify(data)));
 
+  }
+
+  getObservable() {
+    return Observable
+      .interval(1000)
+      .take(10)
+      .map((v) => v * 2);
   }
 
   ngOnInit() {
