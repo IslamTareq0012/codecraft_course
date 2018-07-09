@@ -10,6 +10,11 @@ import { Observable } from 'rxjs/Rx';
 })
 export class ReactiveFormComponent implements OnInit {
 
+  langs: string[] = [
+    'English',
+    'French',
+    'German',
+  ]
   observable: Observable<number>;
   form: FormGroup;
   comment = new FormControl("", Validators.required);
